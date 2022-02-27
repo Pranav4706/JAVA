@@ -5,6 +5,7 @@ public class apsn {
         s = " " + s;
         int p = s.lastIndexOf(' ');
         String lastname = s.substring(p+1);
+        lastname = Character.toUpperCase(lastname.charAt(0)) + lastname.substring(1);
         s = s.substring(0, p);
         s = s.toUpperCase();
         String n = "";
